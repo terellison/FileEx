@@ -67,12 +67,12 @@
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Content Update="appsettings.json">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
+    <ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'iOS' Or '$(TargetPlatformIdentifier)' == 'MacCatalyst'">
+      <EmbeddedResource Include="appsettings.json"/>
+      <Content Remove="appsettings.json"/>
     </ItemGroup>
 
 </Project>
