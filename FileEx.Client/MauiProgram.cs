@@ -24,6 +24,8 @@ public static class MauiProgram
 
 		builder.Configuration.AddConfiguration(config);
 
+		builder.Services.AddSingleton<IFileService, FileService>();
+
 		builder.Services.AddMauiBlazorWebView();
 		builder.Services.AddHttpClient();
 		

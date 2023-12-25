@@ -11,4 +11,8 @@
         </BlazorWebView.RootComponents>
     </BlazorWebView>
 
+    <VerticalStackLayout>
+        <Button Text="Test Endpoint" Clicked="Test_Clicked"></Button>
+    </VerticalStackLayout>
+
 </ContentPage>

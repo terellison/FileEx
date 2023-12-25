@@ -2,10 +2,10 @@
 
 public partial class App : Application
 {
-	public App()
+	public App(IFileService fileService)
 	{
 		InitializeComponent();
 
-		MainPage = new MainPage();
+		MainPage = new MainPage(fileService);
 	}
 }
