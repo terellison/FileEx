@@ -1,4 +1,6 @@
-﻿namespace FileEx.Client;
+﻿using FileEx.Client.Views;
+
+namespace FileEx.Client;
 
 public partial class App : Application
 {

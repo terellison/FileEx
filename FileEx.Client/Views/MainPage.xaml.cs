@@ -1,4 +1,4 @@
-﻿namespace FileEx.Client;
+﻿namespace FileEx.Client.Views;
 
 public partial class MainPage : ContentPage
 {

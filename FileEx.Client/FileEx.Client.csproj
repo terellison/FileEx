@@ -71,8 +71,12 @@
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetPlatformIdentifier)' == 'iOS' Or '$(TargetPlatformIdentifier)' == 'MacCatalyst'">
-      <EmbeddedResource Include="appsettings.json"/>
-      <Content Remove="appsettings.json"/>
+      <EmbeddedResource Include="appsettings.json" />
+      <Content Remove="appsettings.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Views/" />
     </ItemGroup>
 
 </Project>
