@@ -12,6 +12,7 @@ namespace MyApp.Namespace
 
         // GET: FileController
         [HttpGet]
+        [Route("/")]
         public HttpStatusCode Index()
         {
             return HttpStatusCode.OK;
